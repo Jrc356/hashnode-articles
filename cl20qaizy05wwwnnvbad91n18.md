@@ -43,3 +43,6 @@ At the bare minimum, we can use one function to store a bit. However, if we want
 Since a bloom filter is a bit array representation of data, we don't need to worry about storing whole elements in our filter. We only store `m` `bits` rather than `n` `objects`. So you can see how we can represent a large amount of data in a small space.
 
 Searching is constant time but is also dependent on the hashing functions used. The speed of the hashing function will directly determine the speed of your search. Post hashing, however, is constant time as we are directly accessing a specific index of the bit array.
+
+## Golang implementation
+I created a small simple implementation of a bloomfilter here: https://github.com/Jrc356/bloomfilter-golang
